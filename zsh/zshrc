@@ -1,0 +1,28 @@
+# .zshrc is loaded for interactive shells
+
+# oh-my-zsh
+source ~/config/zsh/zshrc-oh-my-zsh
+
+
+# XDG Variables used by many applications
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DOCUMENTS_DIR="$HOME/Documents"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+export XDG_VIDEOS_DIR="$HOME/Videos"
+
+# ZSH_COMPDUMP is a cache used for faster zsh completions
+#export ZSH_COMPDUMP="$XDG_CACHE_HOME/zsh/zcompdump"
+export ZSH_COMPDUMP="$ZSH/cache/.zcompdump-$HOST"
+
+
+# Homebrew environment setup
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Node Version Manager
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
