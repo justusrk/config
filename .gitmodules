@@ -1,3 +1,6 @@
 [submodule "neovim"]
 	path = neovim
 	url = https://github.com/justusrk/nvim-config.git
+[submodule "tmux"]
+	path = tmux
+	url = https://github.com/justusrk/tmux-config.git
