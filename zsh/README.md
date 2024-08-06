@@ -16,5 +16,6 @@ ln -s $HOME/config/zsh/.zprofile ~/.zprofile
 
 The following softwares are optional and their config is also included in .zshrc
 
-1. node version manager (nvm)
-2. python environment manager (pyenv)
+1. homebrew (brew)
+2. node version manager (nvm)
+3. python environment manager (pyenv)
