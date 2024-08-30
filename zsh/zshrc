@@ -30,6 +30,10 @@ eval "$(pyenv init -)"
 # Ruby Environment Manager - (added by rbenv init) - Manage Ruby Versions and Environments
 eval "$(rbenv init - --no-rehash zsh)" 
 
+# Java Environment Manager - Manage Java Versions and Environments
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+
 # Node Version Manager
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -52,5 +56,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Android SDK
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # Flutter Development
 export PATH=/opt/flutter/bin:$PATH
+# Dart Pub Packages to be available at last 
+export PATH=$PATH:$HOME/.pub-cache/bin
